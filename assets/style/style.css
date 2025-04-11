@@ -25,10 +25,17 @@ input[type=number] {
 
 
 body{
+    display: flex;
+    flex-direction: column;
     background-color: #121212;
     color: #f0f0f0;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
+    min-height: 100vh;
+}
+
+.main{
+    flex:1;
 }
 
 header{
@@ -184,14 +191,12 @@ header h1 {
     .campo-box {
         width: 100%;
     }
-    .tabelas{
-        flex-direction: column;
-        gap: 10px;
-    }
+
     .same-height {
         width: 100%;
     }
 }
+
 
 
 footer {

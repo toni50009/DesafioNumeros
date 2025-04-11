@@ -16,82 +16,85 @@
     
         <div class="main container-fluid fade d-flex flex-column border border-black p-3">
             <h1 class="text-center text-white"><i class="bi bi-dice-2-fill p-2"></i>2 números gerados</h1>
-        
-            <div class="row g-3 mt-4 align-items-stretch">
-                <!-- Coluna 1 -->
-                <div class="col-12 col-md-4 d-flex">
-                    <div class="w-100 border border-success rounded-3 p-3 d-flex flex-column justify-content-center">
-                        <p class="fs-4">2 Números foram gerados e guardados nas <span style="color: #00BCD4;">caixas </span><i class="bi bi-arrow-right-circle"></i></p>
-                        <p class="fs-4">Na <span style="color: #00BCD4;">primeira caixa</span>, há um número entre 1 e 10</p>
-                        <p class="fs-4">Na <span style="color: #00BCD4;">segunda caixa</span>,, há um número entre 15 e 30</p>
 
+            <div class="campo-tabelas">
+        
+                <div class="row g-3 mt-4 align-items-stretch">
+                    <!-- Coluna 1 -->
+                    <div class="tabela col-12 col-md-4 d-flex">
+                        <div class="w-100 border border-black rounded-3 p-3 d-flex flex-column justify-content-center">
+                            <p class="fs-4">2 Números foram gerados e guardados nas <span style="color: #00BCD4;">caixas </span><i class="bi bi-arrow-right-circle"></i></p>
+                            <p class="fs-4">Na <span style="color: #00BCD4;">primeira caixa</span>, há um número entre 1 e 10</p>
+                            <p class="fs-4">Na <span style="color: #00BCD4;">segunda caixa</span>,, há um número entre 15 e 30</p>
+
+                        </div>
                     </div>
-                </div>
-        
-                <!-- Coluna 2 -->
-                <div class="col-12 col-md-4 d-flex">
-                    <div class="w-100 border border-success rounded-3 p-3 d-flex justify-content-center align-items-center flex-column">
-                        <div class="campo-boxes d-flex justify-content-center align-items-center row" style="gap: 20px;">
+            
+                    <!-- Coluna 2 -->
+                    <div class="tabela col-12 col-md-4 d-flex">
+                        <div class="w-100 border border-black rounded-3 p-3 d-flex justify-content-center align-items-center flex-column">
+                            <div class="campo-boxes d-flex justify-content-center align-items-center row" style="gap: 20px;">
 
-                            <div class="campo-box small">
+                                <div class="campo-box small">
 
-                                <div class="campo-box-text">Primeira caixa</div>
-                                <i class="bi bi-box-fill d-flex justify-content-center mb-2" style="font-size: 5rem;"></i>
-                                <label for="quantidade">Quantidade:</label>
+                                    <div class="campo-box-text">Primeira caixa</div>
+                                    <i class="bi bi-box-fill d-flex justify-content-center mb-2" style="font-size: 5rem;"></i>
+                                    <label for="quantidade">Quantidade:</label>
+                                        <div class="number-input">
+                                            <button class="btn-decrement">−</button>
+                                            <input type="number" id="quantidade" class="quantidade" value="1" min="1" max="10">
+                                            <button class="btn-increment">+</button>
+                                        </div>
+                                </div>
+                                <div class="campo-box small">
+                                    <div class="campo-box-text">Segunda caixa</div>
+                                    <i class="bi bi-box-fill d-flex justify-content-center mb-2" style="font-size: 5rem;"></i>
+                                    <label for="quantidade">Quantidade:</label>
                                     <div class="number-input">
                                         <button class="btn-decrement">−</button>
-                                        <input type="number" id="quantidade" class="quantidade" value="1" min="1" max="10">
+                                        <input type="number" id="quantidade" class="quantidade" value="15" min="15" max="30">
                                         <button class="btn-increment">+</button>
                                     </div>
-                            </div>
-                            <div class="campo-box small">
-                                <div class="campo-box-text">Segunda caixa</div>
-                                <i class="bi bi-box-fill d-flex justify-content-center mb-2" style="font-size: 5rem;"></i>
-                                <label for="quantidade">Quantidade:</label>
-                                <div class="number-input">
-                                    <button class="btn-decrement">−</button>
-                                    <input type="number" id="quantidade" class="quantidade" value="15" min="15" max="30">
-                                    <button class="btn-increment">+</button>
                                 </div>
-                            </div>
-                            <div class="campo-box small">
-                                <div class="campo-box-text">Terceira caixa</div>
-                                <i class="bi bi-box-fill d-flex justify-content-center mb-2" style="font-size: 5rem;"></i>
-                                <label for="quantidade">Quantidade:</label>
-                                <div class="number-input">
-                                    <button class="btn-decrement">−</button>
-                                    <input type="number" id="quantidade" class="quantidade" value="40" min="40" max="50">
-                                    <button class="btn-increment">+</button>
+                                <div class="campo-box small">
+                                    <div class="campo-box-text">Terceira caixa</div>
+                                    <i class="bi bi-box-fill d-flex justify-content-center mb-2" style="font-size: 5rem;"></i>
+                                    <label for="quantidade">Quantidade:</label>
+                                    <div class="number-input">
+                                        <button class="btn-decrement">−</button>
+                                        <input type="number" id="quantidade" class="quantidade" value="40" min="40" max="50">
+                                        <button class="btn-increment">+</button>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="campo-box small">
-                                <div class="campo-box-text">Quarta caixa</div>
-                                <i class="bi bi-box-fill d-flex justify-content-center mb-2" style="font-size: 5rem;"></i>
-                                <label for="quantidade">Quantidade:</label>
-                                <div class="number-input">
-                                    <button class="btn-decrement">−</button>
-                                    <input type="number" id="quantidade" class="quantidade" value="90" min="90" max="100">
-                                    <button class="btn-increment">+</button>
+                                <div class="campo-box small">
+                                    <div class="campo-box-text">Quarta caixa</div>
+                                    <i class="bi bi-box-fill d-flex justify-content-center mb-2" style="font-size: 5rem;"></i>
+                                    <label for="quantidade">Quantidade:</label>
+                                    <div class="number-input">
+                                        <button class="btn-decrement">−</button>
+                                        <input type="number" id="quantidade" class="quantidade" value="90" min="90" max="100">
+                                        <button class="btn-increment">+</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-        
-                <!-- Coluna 3 -->
-                <div class="col-12 col-md-4 d-flex">
-                    <div class="w-100 border border-success rounded-3 p-3 d-flex justify-content-center align-items-center">
-                        <div class="campochute d-flex flex-column justify-content-center align-items-center">
-                            <p class="fs-4">Clique para saber quais números você acertou e veja a reação de Peter</p>
-                            <button class="btn btn-primary mt-3" onclick="verificarChute()">Verificar Chute</button>
+            
+                    <!-- Coluna 3 -->
+                    <div class="tabela col-12 col-md-4 d-flex">
+                        <div class="w-100 border border-black rounded-4 p-4 d-flex justify-content-center align-items-center">
+                            <div class="campochute d-flex flex-column justify-content-center align-items-center">
+                                <p class="fs-4">Clique para saber quais números você acertou e veja a reação de Peter</p>
+                                <button class="btn btn-primary mt-3" onclick="verificarChute()">Verificar Chute</button>
+                            </div>
+                            <img src="assets/img/peter.png" alt="Peter" class="img-fluid border border-success rounded-5" style="width: 60%; height: 60%;">
                         </div>
-                        <img src="assets/img/peter.png" alt="Peter" class="img-fluid border border-success rounded-5" style="width: 60%; height: 60%;">
                     </div>
                 </div>
             </div>
         </div>
 
-        <footer class="bg-light text-black text-center">
+        <footer class="text-white text-center">
             <p class="mb-0">&copy; 2025 ZanonDev. Todos os direitos reservados.</p>
         </footer>
         <script src="/assets/js/app.js"></script>
